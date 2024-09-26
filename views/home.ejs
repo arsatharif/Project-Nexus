@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Taste It</title>
+    <style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #944d00;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px ;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.order-now {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+/* Restaurant Interior Section */
+.restaurant-interior img {
+    width: 100%;
+    height:100vh;
+    object-fit: cover;
+    display: block;
+}
+
+/* Menu Section */
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+}
+
+.menu-item {
+    text-align: center;
+    max-width: 300px;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h2 {
+    color: #944d00;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    color: #333;
+    font-size: 14px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.userspan{
+    font:bold;
+}
+</style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h3 class="user">Welcome <span class="userspan"><%=name%></span></h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="login">Log Out</a></li>
+            </ul>
+        </nav>
+        <a href="order"class="order-now" id="order-btn">Order Now</a>
+    </header>
+
+    <main>
+        <section class="restaurant-interior">
+            <img src="images/int1.jpg" alt="Restaurant Interior">
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-items">
+            <div class="menu-item">
+                <img src="/images/pasta.png" alt="Pasta">
+                <h2>Pasta</h2>
+                <p>
+                    Pizza is an Italian dish with a flat dough base, topped with tomato sauce, cheese, and various toppings, then baked. It's loved globally in many styles.</p>
+            </div>
+            <div class="menu-item">
+                <img src="/images/pizza-5179939_640.jpg" alt="Pizza">
+                <h2>Pizza</h2>
+                <p>Pasta is an Italian dish made from wheat flour dough, often served with various sauces. It comes in many shapes and is enjoyed worldwide.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="opening-hours">
+            <h3>Opening Hours</h3>
+            <p>Monday to Sunday: 12:00 pm – 4:00 pm,<br>7:00 pm – 10:00 pm</p>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>No.34, 72A, B Ramachandra Rd,<br> Gandhi Nagar, Adyar, Chennai, Tamil Nadu 600020</p>
+            <p>Phone: 044-42673547 , 9345305051</p>
+            <p>Email: arsatharif1117@gmail.com.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>
